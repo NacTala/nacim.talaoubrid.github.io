@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prénom Nom — Étudiant Ingénieur en Robotique</title>
+<meta name="description" content="Portfolio de Prénom Nom, étudiant ingénieur en robotique. Projets, expériences et compétences en mécatronique, vision et contrôle.">
+
+<!-- Polices : une display technique (Space Grotesk), une police de lecture (Inter), une mono pour les labels (JetBrains Mono) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#accueil" class="nav__logo">// portfolio</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#accueil" class="nav__link">Accueil</a>
+      <a href="#apropos" class="nav__link">À propos</a>
+      <a href="#projets" class="nav__link">Projets</a>
+      <a href="#experiences" class="nav__link">Expériences</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="accueil">
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__text" data-reveal>
+        <div class="badge">
+          <span class="badge__led"></span>
+          STATUT — Ouvert aux stages &amp; alternances
+        </div>
+
+        <p class="eyebrow">Étudiant ingénieur · Robotique</p>
+        <!-- MODIFIE ICI : ton prénom et nom -->
+        <h1 class="hero__title">Prénom<br>Nom</h1>
+
+        <!-- MODIFIE ICI : ta phrase d'accroche -->
+        <p class="hero__tagline">
+          Je conçois et construis des systèmes robotiques — du capteur à l'algorithme de contrôle.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+          <a href="#contact" class="btn btn--ghost">Me contacter</a>
+        </div>
+      </div>
+
+      <div class="hero__photo-wrap" data-reveal data-reveal-delay="150">
+        <div class="bracket-frame">
+          <!-- REMPLACE le contenu de ce div par : <img src="assets/photo.jpg" alt="Photo de Prénom Nom"> -->
+          <div class="photo-placeholder">
+            <span>Remplace ce<br>bloc par<br>ta photo</span>
+          </div>
+        </div>
+        <div class="hero__photo-caption">FIG. 01 — PORTRAIT</div>
+      </div>
+    </div>
+
+    <a href="#apropos" class="scroll-cue" aria-label="Défiler vers le bas">
+      <span>SCROLL</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </section>
+
+  <!-- ================= À PROPOS ================= -->
+  <section class="section" id="apropos">
+    <div class="section__inner about">
+      <div class="about__photo" data-reveal>
+        <div class="bracket-frame bracket-frame--sm">
+          <div class="photo-placeholder photo-placeholder--sm">
+            <span>2e photo<br>(optionnel)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about__content">
+        <p class="eyebrow" data-reveal>01 — À propos</p>
+        <h2 class="section__title" data-reveal>Qui je suis</h2>
+
+        <!-- MODIFIE ICI : ta bio en 2-3 phrases -->
+        <p class="about__text" data-reveal>
+          Étudiant en école d'ingénieur, spécialisation robotique, je m'intéresse particulièrement
+          à la perception, au contrôle-commande et à la conception mécanique. J'aime passer
+          d'une simulation à un prototype qui fonctionne réellement sur la table.
+        </p>
+        <p class="about__text" data-reveal>
+          En dehors des cours, je participe à des projets associatifs et des compétitions
+          robotiques. Remplace ce paragraphe par ton propre parcours.
+        </p>
+
+        <div class="spec-sheet" data-reveal>
+          <div class="spec-sheet__row">
+            <span class="spec-sheet__label">Formation</span>
+            <span class="spec-sheet__value">École d'ingénieur — Robotique, 3e année</span>
+          </div>
+          <div class="spec-sheet__row">
+            <span class="spec-sheet__label">Langages</span>
+            <span class="spec-sheet__value">Python · C/C++ · MATLAB</span>
+          </div>
+          <div class="spec-sheet__row">
+            <span class="spec-sheet__label">Outils</span>
+            <span class="spec-sheet__value">ROS / ROS2 · SolidWorks · Git</span>
+          </div>
+          <div class="spec-sheet__row">
+            <span class="spec-sheet__label">Domaines</span>
+            <span class="spec-sheet__value">Vision, contrôle, mécatronique</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJETS ================= -->
+  <section class="section section--alt" id="projets">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>02 — Projets</p>
+      <h2 class="section__title" data-reveal>Ce que j'ai construit</h2>
+
+      <div class="projects-grid">
+
+        <!-- Carte projet 1 — DUPLIQUE ce bloc <article> pour ajouter d'autres projets -->
+        <article class="project-card" data-reveal>
+          <div class="bracket-frame bracket-frame--card">
+            <div class="project-card__media">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none"><path d="M12 8V4m0 0H8m4 0h4M6 12a6 6 0 1112 0v6H6v-6z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Bras robotique 6 axes</h3>
+            <p class="project-card__desc">
+              Conception et contrôle d'un bras robotique pour des tâches de préhension,
+              cinématique inverse codée en Python.
+            </p>
+            <div class="tag-list">
+              <span class="tag">ROS2</span>
+              <span class="tag">Python</span>
+              <span class="tag">SolidWorks</span>
+            </div>
+            <a href="#" class="project-card__link">Voir le repo →</a>
+          </div>
+        </article>
+
+        <!-- Carte projet 2 -->
+        <article class="project-card" data-reveal data-reveal-delay="100">
+          <div class="bracket-frame bracket-frame--card">
+            <div class="project-card__media">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Robot suiveur de ligne autonome</h3>
+            <p class="project-card__desc">
+              Châssis imprimé en 3D, asservissement PID sur capteurs IR,
+              tests sur piste avec virages variables.
+            </p>
+            <div class="tag-list">
+              <span class="tag">Arduino</span>
+              <span class="tag">C++</span>
+              <span class="tag">PID</span>
+            </div>
+            <a href="#" class="project-card__link">Voir le repo →</a>
+          </div>
+        </article>
+
+        <!-- Carte projet 3 -->
+        <article class="project-card" data-reveal data-reveal-delay="200">
+          <div class="bracket-frame bracket-frame--card">
+            <div class="project-card__media">
+              <svg viewBox="0 0 24 24" width="40" height="40" fill="none"><path d="M3 11l18-8-8 18-2-8-8-2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div class="project-card__body">
+            <h3 class="project-card__title">Drone de cartographie</h3>
+            <p class="project-card__desc">
+              Fusion de capteurs (IMU + caméra) pour générer une carte 2D
+              d'un environnement intérieur en temps réel.
+            </p>
+            <div class="tag-list">
+              <span class="tag">OpenCV</span>
+              <span class="tag">SLAM</span>
+              <span class="tag">Python</span>
+            </div>
+            <a href="#" class="project-card__link">Voir le repo →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPÉRIENCES ================= -->
+  <section class="section" id="experiences">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>03 — Expériences</p>
+      <h2 class="section__title" data-reveal>Parcours</h2>
+
+      <div class="timeline">
+
+        <!-- DUPLIQUE ce bloc .timeline__item pour ajouter une expérience -->
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">Été 2025</span>
+            <h3 class="timeline__title">Stage ingénieur — Nom de l'entreprise</h3>
+            <p class="timeline__desc">
+              Développement d'un module de perception pour un robot mobile.
+              Remplace par une vraie expérience (stage, projet de cours, alternance...).
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2024 — auj.</span>
+            <h3 class="timeline__title">Membre — Association robotique de l'école</h3>
+            <p class="timeline__desc">
+              Conception mécanique et électronique pour la compétition annuelle.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2023</span>
+            <h3 class="timeline__title">Projet académique — Vision par ordinateur</h3>
+            <p class="timeline__desc">
+              Détection et suivi d'objets en temps réel avec OpenCV pour un projet de fin d'année.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="section__inner contact__inner">
+      <p class="eyebrow" data-reveal>04 — Contact</p>
+      <h2 class="contact__title" data-reveal>Discutons de votre projet</h2>
+      <p class="contact__text" data-reveal>
+        Stage, alternance, collaboration ou simple échange autour de la robotique —
+        n'hésite pas à m'écrire.
+      </p>
+
+      <div class="contact__links" data-reveal>
+        <!-- MODIFIE ICI : tes vrais liens -->
+        <a href="mailto:ton.email@exemple.com" class="contact__link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.5"/></svg>
+          ton.email@exemple.com
+        </a>
+        <a href="https://github.com/ton-pseudo" class="contact__link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.49v-1.91c-2.78.62-3.37-1.36-3.37-1.36-.46-1.2-1.11-1.52-1.11-1.52-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.34-1.11.62-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.27 9.27 0 0 1 5 0c1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.02 10.02 0 0 0 22 12.2C22 6.58 17.52 2 12 2z" fill="currentColor"/></svg>
+          github.com/ton-pseudo
+        </a>
+        <a href="https://linkedin.com/in/ton-profil" class="contact__link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4.98 3.5a2 2 0 11-.02 4 2 2 0 01.02-4zM3 8.98h4v12H3v-12zm6.5 0h3.84v1.64h.05c.53-1 1.84-2.05 3.79-2.05 4.06 0 4.81 2.67 4.81 6.14v6.27h-4v-5.56c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.66h-4v-12z" fill="currentColor"/></svg>
+          linkedin.com/in/ton-profil
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>&copy; <span id="year"></span> Prénom Nom</span>
+    <span class="footer__mono">// build vanilla HTML · CSS · JS — hébergé sur GitHub Pages</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
