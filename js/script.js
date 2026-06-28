@@ -239,4 +239,75 @@ window.addEventListener('load', () => {
   buildThread();
   // les polices web peuvent finir de charger un instant après "load" et décaler le texte
   setTimeout(buildThread, 300);
+
+  // initialisation des modales (après le DOM chargé)
+  initModals();
 });
+
+/* =========================================================
+   MODALES : ouverture / fermeture / clavier
+   - éléments avec [data-modal-target] ouvrent la modale correspondante
+   - éléments avec [data-modal-close] ferment la modale (overlay ou bouton)
+   - Échap ferme toutes les modales ouvertes
+   - Activation clavier (Enter / Space) sur les cartes
+   ========================================================= */
+function initModals() {
+  // Ouverture
+  document.querySelectorAll('[data-modal-target]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      const id = el.getAttribute('data-modal-target');
+      openModalById(id);
+    });
+
+    el.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const id = el.getAttribute('data-modal-target');
+        openModalById(id);
+      }
+    });
+  });
+
+  // Fermeture (overlay et boutons)
+  document.querySelectorAll('[data-modal-close]').forEach((el) => {
+    el.addEventListener('click', (e) => {
+      const modal = e.target.closest('.modal');
+      if (modal) closeModal(modal);
+    });
+  });
+
+  // Fermer au clic sur overlay (éléments avec class .modal__overlay)
+  document.querySelectorAll('.modal__overlay').forEach((overlay) => {
+    overlay.addEventListener('click', (e) => {
+      const modal = overlay.closest('.modal');
+      if (modal) closeModal(modal);
+    });
+  });
+
+  // Fermer à Échap
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal.is-open').forEach((m) => closeModal(m));
+    }
+  });
+}
+
+function openModalById(id) {
+  if (!id) return;
+  const modal = document.getElementById(id);
+  if (!modal) return;
+  modal.classList.add('is-open');
+  modal.setAttribute('aria-hidden', 'false');
+  // sauvegarde du scroll
+  document.documentElement.style.overflow = 'hidden';
+  // focus management : focus sur le bouton fermer
+  const close = modal.querySelector('[data-modal-close]');
+  if (close) close.focus();
+}
+
+function closeModal(modal) {
+  if (!modal) return;
+  modal.classList.remove('is-open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.documentElement.style.overflow = '';
+}
