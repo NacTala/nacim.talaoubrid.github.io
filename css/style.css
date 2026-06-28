@@ -557,3 +557,85 @@ ul { margin: 0; padding: 0; }
   .projects-grid { grid-template-columns: 1fr; }
   :root { --section-pad: 4.5rem; }
 }
+
+/* =========================================================
+   AJOUTS SPECIFIQUES : styles pour education "sans carrés",
+   stages grid, modales et mise en valeur des stages importants
+   ========================================================= */
+
+/* Education : rendre les cartes plus plates (supprimer les cadres) */
+.education-card {
+  background: transparent;
+  border: none;
+  border-top: none;
+  padding: 0;
+  box-shadow: none;
+}
+.education-card__top { margin-bottom: 0.25rem; }
+.education-card__tag { color: var(--blueprint); opacity: 0.95; }
+.education__intro { margin-bottom: 1.25rem; color: var(--ink-soft); max-width: 65ch; }
+
+/* Stages grid */
+.stages-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+.stage-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: rgba(255,255,255,0.65);
+  padding: 0.9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+  border: 1px solid rgba(20,24,31,0.04);
+}
+.stage-card:focus { outline: 3px solid rgba(255,106,61,0.12); }
+.stage-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(20,24,31,0.06); }
+.stage-card__media { flex: 0 0 140px; }
+.stage-card__media img { width: 140px; height: 96px; object-fit: cover; border-radius: 6px; display: block; }
+.stage-card__body { flex: 1; }
+.stage-card__title { font-size: 1rem; margin: 0 0 0.35rem; }
+.stage-card__brief { margin: 0; color: var(--ink-soft); font-size: 0.92rem; }
+
+/* Mise en évidence des 2 stages importants */
+.stage-card--highlight { border-left: 4px solid var(--accent); transform: translateY(-2px); }
+.stage-card--highlight .stage-card__title { font-weight: 700; }
+
+/* Modal (overlay + panel) */
+.modal { display: none; }
+.modal.is-open { display: block; position: fixed; inset: 0; z-index: 1200; }
+.modal__overlay { position: absolute; inset: 0; background: rgba(10,12,16,0.6); }
+.modal__panel {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 920px;
+  width: calc(100% - 2rem);
+  background: white;
+  color: var(--ink);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 20px 60px rgba(20,24,31,0.18);
+}
+.modal__media img { width: 100%; height: auto; border-radius: 6px; margin-bottom: 0.75rem; }
+.modal__close { position: absolute; right: 0.6rem; top: 0.4rem; background: none; border: none; font-size: 1.6rem; cursor: pointer; color: var(--ink-soft); }
+.modal__lead { font-family: var(--font-mono); color: var(--blueprint); margin: 0.25rem 0 0.75rem; }
+.modal__body p { margin: 0 0 0.75rem; color: var(--ink-soft); }
+
+/* Projects grid tweaks */
+.projects-grid { gap: 1.25rem; }
+.project-card { background: rgba(255,255,255,0.6); padding: 0.8rem; border-radius: 8px; }
+.project-card .project-card__media img { width: 100%; height: 160px; object-fit: cover; border-radius: 6px; }
+
+/* Responsive adjustments for added sections */
+@media (max-width: 980px) {
+  .projects-grid { grid-template-columns: 1fr 1fr; }
+  .stages-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 640px) {
+  .projects-grid { grid-template-columns: 1fr; }
+}
