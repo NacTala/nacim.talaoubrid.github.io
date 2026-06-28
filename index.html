@@ -161,7 +161,7 @@
       <!-- Nouvelle grille de stages : 4 cartes cliquables ouvrant une fenêtre modale -->
       <div class="stages-grid" role="list">
 
-        <article class="stage-card stage-card--highlight" data-reveal data-modal-target="modal-stage-1" role="listitem" tabindex="0">
+        <article class="stage-card stage-card--highlight" data-reveal data-modal-target="modal-stage-1" role="listitem" role="button" tabindex="0" aria-haspopup="dialog">
           <div class="stage-card__media bracket-frame--sm">
             <img src="assets/image.png" alt="Stage 1" onerror="this.style.opacity=0.4">
           </div>
@@ -171,7 +171,7 @@
           </div>
         </article>
 
-        <article class="stage-card stage-card--highlight" data-reveal data-modal-target="modal-stage-2" data-reveal-delay="80" role="listitem" tabindex="0">
+        <article class="stage-card stage-card--highlight" data-reveal data-modal-target="modal-stage-2" data-reveal-delay="80" role="listitem" role="button" tabindex="0" aria-haspopup="dialog">
           <div class="stage-card__media bracket-frame--sm">
             <img src="assets/image.png" alt="Stage 2" onerror="this.style.opacity=0.4">
           </div>
@@ -181,7 +181,7 @@
           </div>
         </article>
 
-        <article class="stage-card" data-reveal data-modal-target="modal-stage-3" data-reveal-delay="160" role="listitem" tabindex="0">
+        <article class="stage-card" data-reveal data-modal-target="modal-stage-3" data-reveal-delay="160" role="listitem" role="button" tabindex="0" aria-haspopup="dialog">
           <div class="stage-card__media bracket-frame--sm">
             <img src="assets/image.png" alt="Stage 3" onerror="this.style.opacity=0.4">
           </div>
@@ -191,7 +191,7 @@
           </div>
         </article>
 
-        <article class="stage-card" data-reveal data-modal-target="modal-stage-4" data-reveal-delay="200" role="listitem" tabindex="0">
+        <article class="stage-card" data-reveal data-modal-target="modal-stage-4" data-reveal-delay="200" role="listitem" role="button" tabindex="0" aria-haspopup="dialog">
           <div class="stage-card__media bracket-frame--sm">
             <img src="assets/image.png" alt="Stage 4" onerror="this.style.opacity=0.4">
           </div>
@@ -212,7 +212,9 @@
           <h3 id="modal-stage-1-title">Stage IA Perception — Entreprise A</h3>
           <p class="modal__lead">Période : Été 2025 · Rôle : Développeur perception</p>
           <div class="modal__body">
-            <p>Détails : J'ai développé un pipeline complet de perception basé sur OpenCV et PyTorch, incluant l'annotation, l'entraînement et le déploiement sur un module embarqué. Résultats : amélioration de 18% de la détection en conditions faibles luminosité.</p>
+            <p>J'ai développé un pipeline complet de perception basé sur OpenCV et PyTorch, incluant l'annotation, l'entraînement et le déploiement sur un module embarqué. Résultats : amélioration de 18% de la détection en conditions faibles luminosité.</p>
+            <p>Exemples de tâches : collecte de données, nettoyage, entraînement, quantification et déploiement embarqué.</p>
+            <p>Technos : Python, OpenCV, PyTorch, Docker, CI.</p>
           </div>
         </div>
       </div>
@@ -225,7 +227,9 @@
           <h3 id="modal-stage-2-title">Stage Contrôle embarqué — Entreprise B</h3>
           <p class="modal__lead">Période : 2024 · Rôle : Développeur embarqué</p>
           <div class="modal__body">
-            <p>Détails : Implémentation d'algorithmes PID et MPC en C sur microcontrôleur ARM, optimisation mémoire et latence pour contrainte temps réel. Tests passés sur prototype et intégration CI.</p>
+            <p>Implémentation d'algorithmes PID et MPC en C sur microcontrôleur ARM, optimisation mémoire et latence pour contrainte temps réel. Tests sur prototype et déploiement sur banc d'essai.</p>
+            <p>Résultats : réduction de la latence de 22% et stabilité améliorée.</p>
+            <p>Technos : C, CMSIS, FreeRTOS, outils de mesure temps réel.</p>
           </div>
         </div>
       </div>
@@ -238,7 +242,8 @@
           <h3 id="modal-stage-3-title">Stage Systèmes mécaniques — Entreprise C</h3>
           <p class="modal__lead">Période : 2023 · Rôle : Concepteur mécanique</p>
           <div class="modal__body">
-            <p>Détails : Conception de pièces, tolérancement et validation sur banc ; réalisation de prototypes imprimés 3D et tests de résistance.</p>
+            <p>Conception de pièces, tolérancement et validation sur banc ; réalisation de prototypes imprimés 3D et tests de résistance.</p>
+            <p>Technos : SolidWorks, imprimante 3D FDM, banc d'essai.</p>
           </div>
         </div>
       </div>
@@ -251,7 +256,8 @@
           <h3 id="modal-stage-4-title">Stage Intégration — Entreprise D</h3>
           <p class="modal__lead">Période : 2022 · Rôle : Intégrateur</p>
           <div class="modal__body">
-            <p>Détails : Coordination des interfaces entre capteurs et contrôleurs, rédaction des procédures de test et support lors des campagnes d'intégration.</p>
+            <p>Coordination des interfaces entre capteurs et contrôleurs, rédaction des procédures de test et support lors des campagnes d'intégration.</p>
+            <p>Technos : gestion de configuration, scripts d'automatisation, protocoles ROS.</p>
           </div>
         </div>
       </div>
@@ -268,7 +274,7 @@
       <div class="projects-grid">
 
         <!-- Carte projet 1 -->
-        <article class="project-card" data-reveal data-modal-target="modal-proj-1">
+        <article class="project-card" data-reveal data-modal-target="modal-proj-1" role="button" tabindex="0" aria-haspopup="dialog">
           <div class="bracket-frame bracket-frame--card project-card__media">
             <img src="assets/image.png" alt="Projet 1" onerror="this.style.opacity=0.4">
           </div>
@@ -280,7 +286,7 @@
         </article>
 
         <!-- Carte projet 2 -->
-        <article class="project-card" data-reveal data-modal-target="modal-proj-2" data-reveal-delay="100">
+        <article class="project-card" data-reveal data-modal-target="modal-proj-2" data-reveal-delay="100" role="button" tabindex="0" aria-haspopup="dialog">
           <div class="bracket-frame bracket-frame--card project-card__media">
             <img src="assets/image.png" alt="Projet 2" onerror="this.style.opacity=0.4">
           </div>
@@ -292,7 +298,7 @@
         </article>
 
         <!-- Carte projet 3 -->
-        <article class="project-card" data-reveal data-modal-target="modal-proj-3" data-reveal-delay="200">
+        <article class="project-card" data-reveal data-modal-target="modal-proj-3" data-reveal-delay="200" role="button" tabindex="0" aria-haspopup="dialog">
           <div class="bracket-frame bracket-frame--card project-card__media">
             <img src="assets/image.png" alt="Projet 3" onerror="this.style.opacity=0.4">
           </div>
@@ -304,7 +310,7 @@
         </article>
 
         <!-- Carte projet 4 -->
-        <article class="project-card" data-reveal data-modal-target="modal-proj-4" data-reveal-delay="260">
+        <article class="project-card" data-reveal data-modal-target="modal-proj-4" data-reveal-delay="260" role="button" tabindex="0" aria-haspopup="dialog">
           <div class="bracket-frame bracket-frame--card project-card__media">
             <img src="assets/image.png" alt="Projet 4" onerror="this.style.opacity=0.4">
           </div>
@@ -316,7 +322,7 @@
         </article>
 
         <!-- Carte projet 5 -->
-        <article class="project-card" data-reveal data-modal-target="modal-proj-5" data-reveal-delay="320">
+        <article class="project-card" data-reveal data-modal-target="modal-proj-5" data-reveal-delay="320" role="button" tabindex="0" aria-haspopup="dialog">
           <div class="bracket-frame bracket-frame--card project-card__media">
             <img src="assets/image.png" alt="Projet 5" onerror="this.style.opacity=0.4">
           </div>
@@ -328,7 +334,7 @@
         </article>
 
         <!-- Carte projet 6 -->
-        <article class="project-card" data-reveal data-modal-target="modal-proj-6" data-reveal-delay="380">
+        <article class="project-card" data-reveal data-modal-target="modal-proj-6" data-reveal-delay="380" role="button" tabindex="0" aria-haspopup="dialog">
           <div class="bracket-frame bracket-frame--card project-card__media">
             <img src="assets/image.png" alt="Projet 6" onerror="this.style.opacity=0.4">
           </div>
@@ -350,21 +356,22 @@
           <h3 id="modal-proj-1-title">Bras robotique 6 axes</h3>
           <p class="modal__lead">Conception mécanique, cinématique et contrôle — Python &amp; ROS2</p>
           <div class="modal__body">
-            <p>Détails : Conception SolidWorks, simulation dynamique, implémentation de la cinématique inverse et tests de préhension.</p>
+            <p>Conception SolidWorks, simulation dynamique, implémentation de la cinématique inverse et tests de préhension.</p>
+            <p>Photos, diagrammes et liens vers le repo sont affichés ici.</p>
           </div>
         </div>
       </div>
 
-      <!-- Répéter pour les autres projets (placeholder) -->
       <div class="modal" id="modal-proj-2" role="dialog" aria-hidden="true" aria-labelledby="modal-proj-2-title">
         <div class="modal__overlay" data-modal-close></div>
         <div class="modal__panel">
           <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
-          <div class="modal__media"><img src="assets.image.png" alt="Projet 2"></div>
+          <div class="modal__media"><img src="assets/image.png" alt="Projet 2"></div>
           <h3 id="modal-proj-2-title">Robot suiveur de ligne autonome</h3>
           <p class="modal__lead">Prototype embarqué — Arduino, C++</p>
           <div class="modal__body">
-            <p>Détails : Asservissement PID, tests sur piste et itérations sur la géométrie du châssis.</p>
+            <p>Asservissement PID, tests sur piste et itérations sur la géométrie du châssis.</p>
+            <p>Composants : capteurs IR, contrôleur brushless, alimentation, châssis imprimé.</p>
           </div>
         </div>
       </div>
@@ -373,11 +380,12 @@
         <div class="modal__overlay" data-modal-close></div>
         <div class="modal__panel">
           <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
-          <div class="modal__media"><img src="assets.image.png" alt="Projet 3"></div>
+          <div class="modal__media"><img src="assets/image.png" alt="Projet 3"></div>
           <h3 id="modal-proj-3-title">Drone de cartographie</h3>
           <p class="modal__lead">SLAM &amp; fusion capteurs</p>
           <div class="modal__body">
-            <p>Détails : Fusion IMU + caméra, génération de cartes 2D et visualisation en temps réel.</p>
+            <p>Fusion IMU + caméra, génération de cartes 2D et visualisation en temps réel.</p>
+            <p>Logiciels : OpenCV, ROS, algorithmes SLAM.</p>
           </div>
         </div>
       </div>
@@ -386,11 +394,11 @@
         <div class="modal__overlay" data-modal-close></div>
         <div class="modal__panel">
           <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
-          <div class="modal__media"><img src="assets.image.png" alt="Projet 4"></div>
+          <div class="modal__media"><img src="assets/image.png" alt="Projet 4"></div>
           <h3 id="modal-proj-4-title">Plateforme mobile autonome</h3>
           <p class="modal__lead">Navigation et évitement</p>
           <div class="modal__body">
-            <p>Détails : Architecture de navigation, capteurs LIDAR/ultrason et tests en environnement contrôlé.</p>
+            <p>Architecture de navigation, capteurs LIDAR/ultrason et tests en environnement contrôlé.</p>
           </div>
         </div>
       </div>
@@ -399,11 +407,11 @@
         <div class="modal__overlay" data-modal-close></div>
         <div class="modal__panel">
           <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
-          <div class="modal__media"><img src="assets.image.png" alt="Projet 5"></div>
+          <div class="modal__media"><img src="assets/image.png" alt="Projet 5"></div>
           <h3 id="modal-proj-5-title">Système de vision industrielle</h3>
           <p class="modal__lead">Inspection et classification</p>
           <div class="modal__body">
-            <p>Détails : Pipeline d'acquisition, preprocessing, et modèle de classification pour détection de défauts.</p>
+            <p>Pipeline d'acquisition, preprocessing, et modèle de classification pour détection de défauts.</p>
           </div>
         </div>
       </div>
@@ -412,11 +420,11 @@
         <div class="modal__overlay" data-modal-close></div>
         <div class="modal__panel">
           <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
-          <div class="modal__media"><img src="assets.image.png" alt="Projet 6"></div>
+          <div class="modal__media"><img src="assets/image.png" alt="Projet 6"></div>
           <h3 id="modal-proj-6-title">Simulateur de robotique</h3>
           <p class="modal__lead">Outil de simulation</p>
           <div class="modal__body">
-            <p>Détails : Environnement de test pour algorithmes de navigation et contrôle avant passage au prototype.</p>
+            <p>Environnement de test pour algorithmes de navigation et contrôle avant passage au prototype.</p>
           </div>
         </div>
       </div>
