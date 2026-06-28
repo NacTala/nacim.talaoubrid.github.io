@@ -21,9 +21,9 @@
     <a href="#accueil" class="nav__logo">// portfolio</a>
     <nav class="nav__links" id="navLinks">
       <a href="#accueil" class="nav__link">Accueil</a>
-      <a href="#apropos" class="nav__link">À propos</a>
+      <a href="#education" class="nav__link">Éducation</a>
+      <a href="#stages" class="nav__link">Stages</a>
       <a href="#projets" class="nav__link">Projets</a>
-      <a href="#experiences" class="nav__link">Expériences</a>
       <a href="#contact" class="nav__link">Contact</a>
     </nav>
     <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
@@ -34,101 +34,155 @@
 
 <main>
 
-  <!-- ================= HERO ================= -->
-  <section class="hero" id="accueil">
-    <div class="hero__grid" aria-hidden="true"></div>
+  <!-- =========================================================
+       THREAD-WRAP : zone où le fil conducteur SVG est dessiné.
+       Il commence en haut du Hero et se sépare en deux pour
+       rejoindre les 2 blocs diplômes de la section Éducation.
+       (voir js/script.js, section "FIL CONDUCTEUR")
+       ========================================================= -->
+  <div class="thread-wrap" id="threadWrap">
+    <svg class="thread-svg" id="threadSvg" aria-hidden="true"></svg>
 
-    <div class="hero__inner">
-      <div class="hero__text" data-reveal>
-        <div class="badge">
-          <span class="badge__led"></span>
-          STATUT — Ouvert aux stages &amp; alternances
-        </div>
+    <!-- ================= HERO / PRÉSENTATION ================= -->
+    <section class="hero" id="accueil">
+      <div class="hero__grid" aria-hidden="true"></div>
 
-        <p class="eyebrow">Étudiant ingénieur · Robotique</p>
-        <!-- MODIFIE ICI : ton prénom et nom -->
-        <h1 class="hero__title">Prénom<br>Nom</h1>
+      <div class="hero__inner">
+        <div class="hero__text" data-reveal>
+          <div class="badge">
+            <span class="badge__led"></span>
+            STATUT — Ouvert aux stages &amp; alternances
+          </div>
 
-        <!-- MODIFIE ICI : ta phrase d'accroche -->
-        <p class="hero__tagline">
-          Je conçois et construis des systèmes robotiques — du capteur à l'algorithme de contrôle.
-        </p>
+          <p class="eyebrow">Étudiant ingénieur · Robotique</p>
+          <!-- MODIFIE ICI : ton prénom et nom -->
+          <h1 class="hero__title">Prénom<br>Nom</h1>
 
-        <div class="hero__actions">
-          <a href="#projets" class="btn btn--primary">Voir mes projets</a>
-          <a href="#contact" class="btn btn--ghost">Me contacter</a>
-        </div>
-      </div>
+          <!-- MODIFIE ICI : ta phrase d'accroche -->
+          <p class="hero__tagline">
+            Je conçois et construis des systèmes robotiques — du capteur à l'algorithme de contrôle.
+          </p>
 
-      <div class="hero__photo-wrap" data-reveal data-reveal-delay="150">
-        <div class="bracket-frame">
-          <!-- REMPLACE le contenu de ce div par : <img src="assets/photo.jpg" alt="Photo de Prénom Nom"> -->
-          <div class="photo-placeholder">
-            <span>Remplace ce<br>bloc par<br>ta photo</span>
+          <!-- MODIFIE ICI : ta présentation en 2-3 phrases -->
+          <p class="hero__bio">
+            Étudiant en école d'ingénieur, spécialisation robotique, je m'intéresse particulièrement
+            à la perception, au contrôle-commande et à la conception mécanique. J'aime passer
+            d'une simulation à un prototype qui fonctionne réellement sur la table — remplace ce
+            paragraphe par ta propre présentation.
+          </p>
+
+          <div class="tag-list hero__skills">
+            <span class="tag">Python</span>
+            <span class="tag">C / C++</span>
+            <span class="tag">ROS2</span>
+            <span class="tag">SolidWorks</span>
+            <span class="tag">MATLAB</span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#projets" class="btn btn--primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn--ghost">Me contacter</a>
           </div>
         </div>
-        <div class="hero__photo-caption">FIG. 01 — PORTRAIT</div>
-      </div>
-    </div>
 
-    <a href="#apropos" class="scroll-cue" aria-label="Défiler vers le bas">
-      <span>SCROLL</span>
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    </a>
-  </section>
-
-  <!-- ================= À PROPOS ================= -->
-  <section class="section" id="apropos">
-    <div class="section__inner about">
-      <div class="about__photo" data-reveal>
-        <div class="bracket-frame bracket-frame--sm">
-          <div class="photo-placeholder photo-placeholder--sm">
-            <span>2e photo<br>(optionnel)</span>
+        <div class="hero__photo-wrap" data-reveal data-reveal-delay="150">
+          <div class="bracket-frame">
+            <!-- REMPLACE le contenu de ce div par : <img src="assets/photo.jpg" alt="Photo de Prénom Nom"> -->
+            <div class="photo-placeholder">
+              <span>Remplace ce<br>bloc par<br>ta photo</span>
+            </div>
           </div>
-        </div>
-      </div>
-
-      <div class="about__content">
-        <p class="eyebrow" data-reveal>01 — À propos</p>
-        <h2 class="section__title" data-reveal>Qui je suis</h2>
-
-        <!-- MODIFIE ICI : ta bio en 2-3 phrases -->
-        <p class="about__text" data-reveal>
-          Étudiant en école d'ingénieur, spécialisation robotique, je m'intéresse particulièrement
-          à la perception, au contrôle-commande et à la conception mécanique. J'aime passer
-          d'une simulation à un prototype qui fonctionne réellement sur la table.
-        </p>
-        <p class="about__text" data-reveal>
-          En dehors des cours, je participe à des projets associatifs et des compétitions
-          robotiques. Remplace ce paragraphe par ton propre parcours.
-        </p>
-
-        <div class="spec-sheet" data-reveal>
-          <div class="spec-sheet__row">
-            <span class="spec-sheet__label">Formation</span>
-            <span class="spec-sheet__value">École d'ingénieur — Robotique, 3e année</span>
-          </div>
-          <div class="spec-sheet__row">
-            <span class="spec-sheet__label">Langages</span>
-            <span class="spec-sheet__value">Python · C/C++ · MATLAB</span>
-          </div>
-          <div class="spec-sheet__row">
-            <span class="spec-sheet__label">Outils</span>
-            <span class="spec-sheet__value">ROS / ROS2 · SolidWorks · Git</span>
-          </div>
-          <div class="spec-sheet__row">
-            <span class="spec-sheet__label">Domaines</span>
-            <span class="spec-sheet__value">Vision, contrôle, mécatronique</span>
-          </div>
+          <div class="hero__photo-caption">FIG. 01 — PORTRAIT</div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ================= PROJETS ================= -->
-  <section class="section section--alt" id="projets">
+      <a href="#education" class="scroll-cue" aria-label="Défiler vers le bas">
+        <span>SCROLL</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ================= ÉDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="section__inner">
+        <!-- repère invisible : c'est le point par lequel le fil passe avant de se séparer -->
+        <span class="thread-anchor" data-thread-point></span>
+
+        <p class="eyebrow" data-reveal>01 — Éducation</p>
+        <h2 class="section__title" data-reveal>Mon parcours académique</h2>
+
+        <!-- data-thread-group = le fil se sépare pour rejoindre chaque enfant direct -->
+        <div class="education-grid" data-thread-group>
+
+          <!-- DUPLIQUE ce bloc .education-card pour ajouter un diplôme (le fil s'adaptera automatiquement) -->
+          <article class="education-card" data-reveal>
+            <div class="education-card__top">
+              <span class="education-card__tag">DIPLÔME // 01</span>
+            </div>
+            <h3 class="education-card__title">Baccalauréat — Filière scientifique</h3>
+            <p class="education-card__school">Nom de ton lycée ou prépa · 2020 — 2023</p>
+            <p class="education-card__desc">
+              Mention, spécialités ou détails pertinents à ajouter ici.
+            </p>
+          </article>
+
+          <article class="education-card" data-reveal data-reveal-delay="100">
+            <div class="education-card__top">
+              <span class="education-card__tag">DIPLÔME // 02</span>
+            </div>
+            <h3 class="education-card__title">Diplôme d'ingénieur — Robotique</h3>
+            <p class="education-card__school">Nom de ton école · 2023 — 2026</p>
+            <p class="education-card__desc">
+              Spécialisation mécatronique, vision et contrôle. Remplace par ta vraie formation.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- /.thread-wrap -->
+
+  <!-- ================= STAGES & PROJETS PRO ================= -->
+  <section class="section section--alt" id="stages">
     <div class="section__inner">
-      <p class="eyebrow" data-reveal>02 — Projets</p>
+      <p class="eyebrow" data-reveal>02 — Stages &amp; projets pro</p>
+      <h2 class="section__title" data-reveal>Expérience professionnelle</h2>
+
+      <div class="timeline">
+
+        <!-- DUPLIQUE ce bloc .timeline__item pour ajouter une expérience -->
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">Été 2025</span>
+            <h3 class="timeline__title">Stage ingénieur — Nom de l'entreprise</h3>
+            <p class="timeline__desc">
+              Développement d'un module de perception pour un robot mobile.
+              Remplace par une vraie expérience (stage, alternance...) et les projets réalisés pendant celle-ci.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__dot"></div>
+          <div class="timeline__content">
+            <span class="timeline__date">2024 — auj.</span>
+            <h3 class="timeline__title">Membre — Association robotique de l'école</h3>
+            <p class="timeline__desc">
+              Conception mécanique et électronique pour la compétition annuelle.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJETS ACADÉMIQUES ================= -->
+  <section class="section" id="projets">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>03 — Projets académiques</p>
       <h2 class="section__title" data-reveal>Ce que j'ai construit</h2>
 
       <div class="projects-grid">
@@ -198,53 +252,6 @@
             <a href="#" class="project-card__link">Voir le repo →</a>
           </div>
         </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= EXPÉRIENCES ================= -->
-  <section class="section" id="experiences">
-    <div class="section__inner">
-      <p class="eyebrow" data-reveal>03 — Expériences</p>
-      <h2 class="section__title" data-reveal>Parcours</h2>
-
-      <div class="timeline">
-
-        <!-- DUPLIQUE ce bloc .timeline__item pour ajouter une expérience -->
-        <div class="timeline__item" data-reveal>
-          <div class="timeline__dot"></div>
-          <div class="timeline__content">
-            <span class="timeline__date">Été 2025</span>
-            <h3 class="timeline__title">Stage ingénieur — Nom de l'entreprise</h3>
-            <p class="timeline__desc">
-              Développement d'un module de perception pour un robot mobile.
-              Remplace par une vraie expérience (stage, projet de cours, alternance...).
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline__item" data-reveal>
-          <div class="timeline__dot"></div>
-          <div class="timeline__content">
-            <span class="timeline__date">2024 — auj.</span>
-            <h3 class="timeline__title">Membre — Association robotique de l'école</h3>
-            <p class="timeline__desc">
-              Conception mécanique et électronique pour la compétition annuelle.
-            </p>
-          </div>
-        </div>
-
-        <div class="timeline__item" data-reveal>
-          <div class="timeline__dot"></div>
-          <div class="timeline__content">
-            <span class="timeline__date">2023</span>
-            <h3 class="timeline__title">Projet académique — Vision par ordinateur</h3>
-            <p class="timeline__desc">
-              Détection et suivi d'objets en temps réel avec OpenCV pour un projet de fin d'année.
-            </p>
-          </div>
-        </div>
 
       </div>
     </div>
