@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prénom Nom — Étudiant Ingénieur en Robotique</title>
+<meta name="description" content="Portfolio de Prénom Nom, étudiant ingénieur en robotique. Projets, expériences et compétences en mécatronique, vision et contrôle.">
+
+<!-- Polices : une display technique (Space Grotesk), une police de lecture (Inter), une mono pour les labels (JetBrains Mono) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#accueil" class="nav__logo">// portfolio</a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#accueil" class="nav__link">Home</a>
+      <a href="#education" class="nav__link">Education</a>
+      <a href="#stages" class="nav__link">Experience</a>
+      <a href="#projets" class="nav__link">Projects</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+
+  <!-- ================= HERO / PRÉSENTATION -- ================= -->
+    <section class="hero" id="accueil">
+      <div class="hero__grid" aria-hidden="true"></div>
+
+      <div class="hero__decor" aria-hidden="true">
+        <img src="assets/hand.png" class="hero__img hero__img--1">
+        <img src="assets/writ.png" class="hero__img hero__img--2">
+        <img src="assets/abb.png" class="hero__img hero__img--3">
+        <img src="assets/drone_lu.png" class="hero__img hero__img--4">
+        <img src="assets/turtle.png" class="hero__img hero__img--5">
+        <img src="assets/lunette.png" class="hero__img hero__img--6">
+      </div>
+
+      <div class="hero__inner">
+        <div class="hero__text" data-reveal>
+          <div class="badge">
+            <span class="badge__led"></span>
+            STATUS — Available for R&D positions from October 2026
+          </div>
+
+          <p class="eyebrow">Robotics Engineer · AI for Robotics</p>
+          <!-- MODIFIE ICI : ton prénom et nom -->
+          <h1 class="hero__title">Nacim TALAOUBRID</h1>
+
+          <!-- MODIFIE ICI : ta phrase d'accroche -->
+          <p class="hero__tagline">
+            Robotics Engineering student at Polytech Sorbonne and Master's student at Sorbonne University, specializing in Artificial Intelligence applied to Robotics.
+          </p>
+
+          <!-- MODIFIE ICI : ta présentation en 2-3 phrases -->
+          <p class="hero__bio">
+            I develop intelligent robotic systems by combining robot learning and robot control. I am currently conducting my final-year internship at ISIR, where I work on imitation learning methods for robotic manipulation  
+          </p>
+
+        </div>
+
+        <div class="hero__photo-wrap" data-reveal data-reveal-delay="150">
+          <div class="bracket-frame">
+            <!-- REMPLACE le contenu de ce div par : <img src="assets/image.png" alt="Photo de Prénom Nom"> -->
+            <div class="photo-placeholder">
+              <img src="assets/portrait.png" alt="portrait" onerror="this.style.opacity=0.4">
+            </div>
+          </div>
+          <div class="hero__photo-caption">FIG. 01 — It's me</div>
+        </div>
+      </div>
+
+      <a href="#education" class="scroll-cue" aria-label="Défiler vers le bas">
+        <span>SCROLL</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </section>
+
+    <!-- ================= ÉDUCATION ================= -->
+    <section class="section" id="education">
+      <div class="section__inner">
+        <p class="eyebrow" data-reveal>01 — Education</p>
+        <h2 class="section__title" data-reveal>Education</h2>
+        
+        <div class="education-shell">
+          <div class="education__intro" contenteditable="true" data-reveal>
+            <p>
+              My Robotics Engineering degree at Polytech Sorbonne gave me a strong foundation in robotics, AI, and embedded systems. <br>Looking to apply these skills to meaningful real-world challenges, I pursued a dual degree with the Master's in Mechatronic Systems for Rehabilitation (MSR) at Sorbonne University.<br> There, I discovered human-centered robotics and AI through projects in human-robot interaction, haptics, and imitation learning, confirming my interest in developing intelligent robotic systems that assist and collaborate with people.
+            </p>
+          </div>
+
+          <div class="education-grid">
+            <article class="education-card education-card--highlight" data-reveal>
+              <div class="education-card__brand">
+                <div class="education-card__logo-wrap">
+                  <img src="assets/Sorbonne.png" alt="Sorbonne University Logo" onerror="this.style.opacity=0.4">
+                </div>
+                <div class="education-card__meta">
+                  <span class="education-card__pill">MASTER'S DEGREE</span>
+                  <h3 class="education-card__title">Master's in Mechatronic Systems for Rehabilitation (MSR)</h3>
+                  <p class="education-card__period">2025 — 2026</p>
+                </div>
+              </div>
+
+              <ul class="education-card__courses">
+                <li>Human-centered robotics & Human–Robot Interaction (HRI)</li>
+                <li>Haptics</li>
+                <li>Exoskeletons and assistive robotic systems</li>
+                <li>Imitation Learning & AI for robotics</li>
+              </ul>
+            </article>
+
+            <article class="education-card" data-reveal data-reveal-delay="120">
+              <div class="education-card__brand">
+                <div class="education-card__logo-wrap">
+                  <img src="assets/polytech.png" alt="Polytech Sorbonne Logo" onerror="this.style.opacity=0.4">
+                </div>
+                <div class="education-card__meta">
+                  <span class="education-card__pill">ENGINEERING DEGREE</span>
+                  <h3 class="education-card__title">Engineering Degree in Robotics</h3>
+                  <p class="education-card__period">2023 — 2026</p>
+                </div>
+              </div>
+
+              <ul class="education-card__courses">
+                <li>Artificial Intelligence & Computer Vision</li>
+                <li>Control engineering</li>
+                <li>Mechanics & CAD (SolidWorks)</li>
+                <li>Software development (Python, C/C++, ROS 2)</li>
+                <li>Mobile robotics</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- ================= STAGES & PROJETS PRO ================= -->
+  <section class="section section--alt" id="stages">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>02 — Expérience professionnelle</p>
+      <h2 class="section__title" data-reveal>Professional Experience</h2>
+
+      <div class="experience-timeline" role="list">
+        <article class="experience-item experience-item--featured" data-reveal role="listitem">
+          <div class="experience-timeline__node experience-timeline__node--featured"></div>
+          <div class="experience-timeline__date">2026</div>
+          <div class="experience-timeline__logo">
+            <img src="assets/Logo_ISIR.png" alt="ISIR - Sorbonne University logo" onerror="this.style.opacity=0.4">
+          </div>
+
+          <div class="experience-card experience-card--featured" data-modal-target="modal-stage-1" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="experience-card__media">
+              <img src="assets/Grasping.gif" alt="Illustration Stage 1" onerror="this.style.opacity=0.4">
+            </div>
+            <div class="experience-card__body">
+              <span class="experience-card__period">2026 • France</span>
+              <h3 class="experience-card__title">Final-Year Internship</h3>
+              <p class="experience-card__company">ISIR - Sorbonne University</p>
+              <p class="experience-card__brief">
+                Developed autonomous manipulation capabilities for dexterous hand equipped with tactile sensors and investigate the role of tactile sensing in learning-based control.
+              </p>
+              <span class="experience-card__cta">More details →</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-item experience-item--left" data-reveal data-reveal-delay="150" role="listitem">
+          <div class="experience-timeline__node"></div>
+          <div class="experience-timeline__date">2024</div>
+          <div class="experience-timeline__logo">
+            <img src="assets/luminous.png" alt="LuminousBEE logo" onerror="this.style.opacity=0.4">
+          </div>
+
+          <div class="experience-card" data-modal-target="modal-stage-2" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="experience-card__media">
+              <img src="assets/drone.jpg" alt="Illustration Stage 2" onerror="this.style.opacity=0.4">
+            </div>
+
+            <div class="experience-card__body">
+              <span class="experience-card__period">2024 • Italy</span>
+              <h3 class="experience-card__title">Technical Internship</h3>
+              <p class="experience-card__company">LuminousBEE</p>
+              <p class="experience-card__brief">
+                Developed Python-based Blender plugins to automate and streamline the creation of drone light show choreographies. 
+                Contributed to the SFIDA project focused on autonomous drone systems for photogrammetric inspection. 
+              </p>
+              <span class="experience-card__cta">More details →</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-item experience-item--right" data-reveal data-reveal-delay="200" role="listitem">
+          <div class="experience-timeline__node"></div>
+          <div class="experience-timeline__date">2023</div>
+          <div class="experience-timeline__logo">
+            <img src="assets/Stellantis.svg.png" alt="Stellantis logo" onerror="this.style.opacity=0.4">
+          </div>
+
+          <div class="experience-card" data-modal-target="modal-stage-3" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="experience-card__media">
+              <img src="assets/usine.jpg" alt="Illustration Stage 3" onerror="this.style.opacity=0.4">
+            </div>
+
+            <div class="experience-card__body">
+              <span class="experience-card__period">2023 • France</span>
+              <h3 class="experience-card__title">Production Internship</h3>
+              <p class="experience-card__company">Stellantis</p>
+              <p class="experience-card__brief">
+                Participated in vehicle assembly operations on the Peugeot 5008 and Citroën C5 production lines.
+              </p>
+              <span class="experience-card__cta">More details →</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-item experience-item--left" data-reveal data-reveal-delay="250" role="listitem">
+          <div class="experience-timeline__node"></div>
+          <div class="experience-timeline__date">2022</div>
+          <div class="experience-timeline__logo">
+            <img src="assets/inria.png" alt="INRIA logo" onerror="this.style.opacity=0.4">
+          </div>
+
+          <div class="experience-card" data-modal-target="modal-stage-4" role="button" tabindex="0" aria-haspopup="dialog">
+            <div class="experience-card__media">
+              <img src="assets/nlp.png" alt="Illustration Stage 4" onerror="this.style.opacity=0.4">
+            </div>
+
+            <div class="experience-card__body">
+              <span class="experience-card__period">2022 • France</span>
+              <h3 class="experience-card__title">Research Discovery Internship</h3>
+              <p class="experience-card__company">INRIA</p>
+              <p class="experience-card__brief">
+                Research internship within a Natural Language Processing (NLP) team focused on Named Entity Recognition in noisy text data. 
+              </p>
+              <span class="experience-card__cta">More details →</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="modal" id="modal-stage-1" role="dialog" aria-hidden="true" aria-labelledby="modal-stage-1-title">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel">
+          <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
+
+          <div class="modal__hero">
+            <p class="modal__eyebrow">2026 · RESEARCH INTERNSHIP</p>
+            <h3 id="modal-stage-1-title">Imitation Learning for Dexterous Manipulation</h3>
+            <p class="modal__lead">ISIR — Sorbonne University | Robotics, manipulation and learning-based control</p>
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__grid">
+
+              <div class="modal__section modal__section--wide">
+                <h4>Full description</h4>
+                <p>
+                  Built a full data pipeline for robotic manipulation, with synchronized multimodal sensing (vision and tactile signals).<br> 
+                  Trained and evaluated imitation learning policies for robotic control, and studied how different tactile representations influence learning performance.
+                  Benchmarked several imitation learning algorithms, including Diffusion Policy, ACT, and MLPbased approaches.
+                  Introduced a shared control algorithms between the learned model and the human teacher (teacher-in-the-loop), enabling learning strategies inspired by approaches such as DAgger. 
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Objectives</h4>
+                <p>
+                   Develop autonomous manipulation capabilities for dexterous hand and investigate the role of tactile sensing in learning-based control.
+                </p>
+              </div>
+
+            
+
+              <div class="modal__section modal__section--wide">
+                <h4>Technologies used</h4>
+                <ul class="modal__list">
+                  <li>Python</li>
+                  <li>ROS 2</li>
+                  <li>PyTorch</li>
+                  <li>Imitation Learning (Diffusion Policy, MLP, ACT)</li>
+                  <li>Tactile sensing systems</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal" id="modal-stage-2" role="dialog" aria-hidden="true" aria-labelledby="modal-stage-2-title">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel">
+          <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
+
+          <div class="modal__hero">
+            <p class="modal__eyebrow">2024 · Italy</p>
+            <h3 id="modal-stage-2-title">Technical Internship</h3>
+            <p class="modal__lead">LuminousBEE</p>
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__grid">
+
+              <div class="modal__section modal__section--wide">
+                <h4>Full description</h4>
+                <p>
+                  Developed Python plugins for Blender to design and automate drone light show choreographies. 
+                  Contributed to the SFIDA project focused on autonomous drone systems for photogrammetric inspection. 
+                  Designed and implemented bidirectional communication between onboard drone systems and external computing units in an embedded Linux environment, including real-time image transfer to a ground station.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Objectives</h4>
+                <p>
+                  Develop reliable embedded and communication systems for autonomous drone operations.
+                </p>
+              </div>
+
+    
+
+              <div class="modal__section modal__section--wide">
+                <h4>Technologies used</h4>
+                <ul class="modal__list">
+                  <li>Python</li>
+                  <li>Blender API</li>
+                  <li>Embedded Linux</li>
+                  <li>Networking / communication protocols</li>
+                  <li>Drone systems</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal" id="modal-stage-3" role="dialog" aria-hidden="true" aria-labelledby="modal-stage-3-title">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel">
+          <button class="modal__close" aria-label="Close" data-modal-close>&times;</button>
+
+          <div class="modal__hero">
+            <p class="modal__eyebrow">2024 · France</p>
+            <h3 id="modal-stage-3-title">Production Internship</h3>
+            <p class="modal__lead">:contentReference[oaicite:0]{index=0} — Automotive manufacturing and assembly</p>
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__grid">
+
+              <div class="modal__section modal__section--wide">
+                <h4>Full description</h4>
+                <p>
+                  Worked on the final assembly line for Peugeot 5008 and Citroën C5 vehicles within the assembly department.
+                  Participated in the installation and fastening of vehicle components, electrical wiring, interior trim, and finishing elements while respecting strict production deadlines and quality standards.
+                  Collaborated closely with production operators in a fast-paced industrial environment and gained first-hand experience with lean manufacturing processes, teamwork, and continuous production workflows.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal" id="modal-stage-4" role="dialog" aria-hidden="true" aria-labelledby="modal-stage-4-title">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel">
+          <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
+
+          <div class="modal__hero">
+            <p class="modal__eyebrow">2022 · France</p>
+            <h3 id="modal-stage-4-title">NLP Research Discovery Internship</h3>
+            <p class="modal__lead">INRIA — Natural Language Processing and information extraction</p>
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__grid">
+
+              <div class="modal__section modal__section--wide">
+                <h4>Full description</h4>
+                <p>
+                  Worked within a Natural Language Processing research team focused on Named Entity Recognition (NER) in noisy and unstructured text data. 
+                  Contributed for entity extraction and annotation from real-world datasets. 
+                  Participated in experiments evaluating model performance and improving robustness on imperfect textual inputs such as informal or noisy corpora.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="projets">
+    <div class="section__inner">
+      <p class="eyebrow" data-reveal>03 — Academic projects</p>
+      <h2 class="section__title" data-reveal>Some examples</h2>
+
+      <div class="projects-grid">
+        <article class="project-card" data-reveal data-modal-target="modal-proj-1" role="button" tabindex="0" aria-haspopup="dialog">
+          <div class="bracket-frame bracket-frame--card project-card__media">
+            <img src="assets/writer.png" alt="Robotic Writing System Project" onerror="this.style.opacity=0.4">
+          </div>
+
+          <div class="project-card__body">
+            <span class="project-card__eyebrow">Robotics</span>
+            <h3 class="project-card__title">Robotic Writing System</h3>
+            <p class="project-card__desc">
+              Designed a full robotic writing system combining mechanical design, actuation, and control. 
+            </p>
+            <span class="project-card__cta">More details →</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal data-modal-target="modal-proj-2" data-reveal-delay="100" role="button" tabindex="0" aria-haspopup="dialog">
+          <div class="bracket-frame bracket-frame--card project-card__media">
+            <img src="assets/msr.png" alt="Smart Glasses Emotion Recognition Project" onerror="this.style.opacity=0.4">
+          </div>
+
+          <div class="project-card__body">
+            <span class="project-card__eyebrow">Human-Centered AI</span>
+            <h3 class="project-card__title">Smart Glasses for Emotion Recognition</h3>
+            <p class="project-card__desc">
+              Assistive wearable system combining computer vision and haptic feedback to support emotion awareness in real time.
+            </p>
+            <span class="project-card__cta">More details →</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal data-modal-target="modal-proj-3" data-reveal-delay="200" role="button" tabindex="0" aria-haspopup="dialog">
+          <div class="bracket-frame bracket-frame--card project-card__media">
+            <img src="assets/object_red.png" alt="Object Tracking with OpenCV Project" onerror="this.style.opacity=0.4">
+          </div>
+
+          <div class="project-card__body">
+            <span class="project-card__eyebrow">Computer Vision</span>
+            <h3 class="project-card__title">Real-Time Object Tracking System</h3>
+            <p class="project-card__desc">
+              OpenCV-based system for real-time detection and tracking of a colored object with closed-loop motor control.
+            </p>
+            <span class="project-card__cta">More details →</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal data-modal-target="modal-proj-4" data-reveal-delay="260" role="button" tabindex="0" aria-haspopup="dialog">
+          <div class="bracket-frame bracket-frame--card project-card__media">
+            <img src="assets/mobile.png" alt="Autonomous Navigation Project" onerror="this.style.opacity=0.4">
+          </div>
+
+          <div class="project-card__body">
+            <span class="project-card__eyebrow">Autonomous Navigation</span>
+            <h3 class="project-card__title">Autonomous Mobile Robot Navigation</h3>
+            <p class="project-card__desc">
+              ROS 2 navigation system featuring SLAM-based mapping, path planning, obstacle avoidance, and autonomous return-to-home.
+            </p>
+            <span class="project-card__cta">More details →</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal data-modal-target="modal-proj-5" data-reveal-delay="320" role="button" tabindex="0" aria-haspopup="dialog">
+          <div class="bracket-frame bracket-frame--card project-card__media">
+            <img src="assets/video.png" alt="Robot Tanks Game Project" onerror="this.style.opacity=0.4">
+          </div>
+
+          <div class="project-card__body">
+            <span class="project-card__eyebrow">Game Development</span>
+            <h3 class="project-card__title">Robot Tanks</h3>
+            <p class="project-card__desc">
+              Video game developed in C++ with SFML and an object-oriented architecture.
+            </p>
+            <span class="project-card__cta">More details →</span>
+          </div>
+        </article>
+
+        <article class="project-card" data-reveal data-modal-target="modal-proj-6" data-reveal-delay="100" role="button" tabindex="0" aria-haspopup="dialog">
+          <div class="bracket-frame bracket-frame--card project-card__media">
+            <img src="assets/immitation.png" alt="DAgger Imitation Learning Project" onerror="this.style.opacity=0.4">
+          </div>
+
+          <div class="project-card__body">
+            <span class="project-card__eyebrow">Robot Learning</span>
+            <h3 class="project-card__title">DAgger for Robotic Imitation Learning</h3>
+            <p class="project-card__desc">
+              Implementation and evaluation of DAgger on the FetchReach-v4 robotic environment using human, PID, and reinforcement learning experts.
+            </p>
+            <span class="project-card__cta">More details →</span>
+          </div>
+        </article>
+
+      <div class="modal" id="modal-proj-1" role="dialog" aria-hidden="true" aria-labelledby="modal-proj-1-title">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel">
+          <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
+
+          <div class="modal__hero">
+            <p class="modal__eyebrow">Robotics</p>
+            <h3 id="modal-proj-1-title">Robotic Writing System</h3>
+            <p class="modal__lead">Kinematic modelling, motion planning and control of a compact robotic manipulator</p>
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__grid">
+
+              <div class="modal__section modal__section--wide">
+                <h4>Full description</h4>
+                <p>
+                  Designed and developed a complete robotic writing system capable of drawing on a flat surface. 
+                  Modeled the full mechanical structure using SolidWorks, including kinematics and actuation layout. 
+                  Implemented the control architecture and motion execution pipeline, integrating trajectory generation and low-level motor control. 
+                  Manufactured custom mechanical parts using 3D printing and laser cutting, followed by full assembly and system integration of hardware and software components.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Objectives</h4>
+                <p>
+                  Design and build a fully functional robotic system capable of precise planar writing, integrating mechanics, control, and user interaction.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Technologies used</h4>
+                <ul class="modal__list">
+                  <li>SolidWorks</li>
+                  <li>Arduino</li>
+                  <li>3D printing</li>
+                  <li>Laser cutting</li>
+                  <li>Embedded control</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-2" role="dialog" aria-hidden="true" aria-labelledby="modal-proj-2-title">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel">
+          <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
+
+          <div class="modal__hero">
+            <p class="modal__eyebrow">Human-Centered AI</p>
+            <h3 id="modal-proj-2-title">Smart Glasses for Emotion Recognition</h3>
+            <p class="modal__lead">
+              Assistive wearable combining computer vision-based emotion recognition and haptic feedback
+            </p>
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__grid">
+
+              <div class="modal__section modal__section--wide">
+                <h4>Full description</h4>
+                <p>
+                  Designed an assistive smart glasses system for visually impaired and autistic users, integrating a camera and an AI module to analyze the facial emotions of the interlocutor in real time. 
+                  Developed a first functional prototype featuring a pneumatic haptic feedback system embedded in the temples of the glasses, where the intensity of detected emotions (e.g., anger, joy) is translated into proportional inflation of textured cushions to provide intuitive tactile feedback to the user.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Objectives</h4>
+                <p>
+                  Create an assistive wearable system that translates facial emotion recognition into intuitive haptic feedback for real-world social interaction support.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Technologies used</h4>
+                <ul class="modal__list">
+                  <li>Python</li>
+                  <li>Computer vision</li>
+                  <li>Deep learning</li>
+                  <li>Embedded systems</li>
+                  <li>Pneumatic actuation</li>
+                  <li>Haptic feedback systems</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-3" role="dialog" aria-hidden="true" aria-labelledby="modal-proj-3-title">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel">
+          <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
+
+          <div class="modal__hero">
+            <p class="modal__eyebrow">Computer Vision</p>
+            <h3 id="modal-proj-3-title">Real-Time Object Tracking System</h3>
+            <p class="modal__lead">OpenCV-based visual tracking with closed-loop motor control</p>
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__grid">
+
+              <div class="modal__section modal__section--wide">
+                <h4>Full description</h4>
+                <p>
+                  Developed a real-time computer vision system using OpenCV to detect and track a red-colored object in a live video stream. 
+                  Controlled a camera mounted on a two-motor pan-tilt system driven by an Arduino via serial communication. 
+                  Implemented a closed-loop feedback pipeline where image processing outputs were directly used to adjust motor commands for continuous and accurate object tracking.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Objectives</h4>
+                <p>
+                  Build a real-time vision-based tracking system capable of automatically following a moving object using closed-loop control.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Technologies used</h4>
+                <ul class="modal__list">
+                  <li>Python</li>
+                  <li>OpenCV</li>
+                  <li>Computer vision</li>
+                  <li>Control systems</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-4" role="dialog" aria-hidden="true" aria-labelledby="modal-proj-4-title">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel">
+          <button class="modal__close" aria-label="Fermer" data-modal-close>&times;</button>
+
+          <div class="modal__hero">
+            <p class="modal__eyebrow">Autonomous Navigation</p>
+            <h3 id="modal-proj-4-title">Autonomous Mobile Robot Navigation</h3>
+            <p class="modal__lead">ROS 2 navigation, SLAM, path planning and autonomous exploration</p>
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__grid">
+
+              <div class="modal__section modal__section--wide">
+                <h4>Full description</h4>
+                <p>
+                  Developed a complete autonomous navigation framework for a TurtleBot4 using ROS 2. Implemented teleoperated and autonomous exploration with Cartographer SLAM, path planning from generated maps, a trajectory-following controller with dynamic obstacle avoidance, and a return-to-home functionality based on a recorded starting position.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Objectives</h4>
+                <p>
+                  Develop a fully autonomous mobile robot capable of mapping, navigating, and safely returning to its starting location.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Technologies used</h4>
+                <ul class="modal__list">
+                  <li>ROS 2</li>
+                  <li>TurtleBot4</li>
+                  <li>Cartographer SLAM</li>
+                  <li>Path planning</li>
+                  <li>Dynamic obstacle avoidance</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-5" role="dialog" aria-hidden="true" aria-labelledby="modal-proj-5-title">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel">
+          <button class="modal__close" aria-label="Close" data-modal-close>&times;</button>
+
+          <div class="modal__hero">
+            <p class="modal__eyebrow">Game Development</p>
+            <h3 id="modal-proj-5-title">Robot Tanks</h3>
+            <p class="modal__lead">2D Video game developed in C++ with SFML</p>
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__grid">
+
+              <div class="modal__section modal__section--wide">
+                <h4>Full description</h4>
+                <p>
+                  Developed a 2D video game in C++ using SFML. Designed an object-oriented software architecture, implemented a custom physics engine accounting for gravity and wind, projectile collision detection, terrain interaction, game state management, and an extensible weapon system with multiple projectile behaviors.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Objectives</h4>
+                <p>
+                  Design a complete game engine combining physics simulation, object-oriented programming, and interactive graphics.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Technologies used</h4>
+                <ul class="modal__list">
+                  <li>C++</li>
+                  <li>SFML</li>
+                  <li>Object-Oriented Programming</li>
+                  <li>Physics simulation</li>
+                  <li>Collision detection</li>
+                  <li>Game state management</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="modal" id="modal-proj-6" role="dialog" aria-hidden="true" aria-labelledby="modal-proj-6-title">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__panel">
+          <button class="modal__close" aria-label="Close" data-modal-close>&times;</button>
+
+          <div class="modal__hero">
+            <p class="modal__eyebrow">Robot Learning</p>
+            <h3 id="modal-proj-6-title">DAgger for Robotic Imitation Learning</h3>
+            <p class="modal__lead">
+              Dataset aggregation and expert comparison on the FetchReach-v4 robotic environment
+            </p>
+          </div>
+
+          <div class="modal__body">
+            <div class="modal__grid">
+
+              <div class="modal__section modal__section--wide">
+                <h4>Full description</h4>
+                <p>
+                  Implemented the DAgger (Dataset Aggregation) algorithm on the FetchReach-v4 robotic environment to improve imitation learning performance under distribution shift. 
+                  Compared three types of experts: human demonstrations, a PID-based analytical controller, and a pre-trained SAC reinforcement learning policy. 
+                  Evaluated the influence of expert quality on the learned policy and compared Behavioral Cloning with DAgger-based approaches.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Objectives</h4>
+                <p>
+                  Study the impact of expert supervision quality and evaluate dataset aggregation methods for robust robotic imitation learning.
+                </p>
+              </div>
+
+              <div class="modal__section modal__section--wide">
+                <h4>Technologies used</h4>
+                <ul class="modal__list">
+                  <li>Python</li>
+                  <li>PyTorch</li>
+                  <li>Imitation Learning</li>
+                  <li>DAgger</li>
+                  <li>Reinforcement Learning</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="section__inner contact__inner">
+      <p class="eyebrow" data-reveal>04 — Contact</p>
+      <h2 class="contact__title" data-reveal>Let's work together</h2>
+
+      <div class="contact__links" data-reveal>
+
+        <a href="mailto:nacimtd@gmail.com" class="contact__link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+            <path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          nacim.td@gmail.com
+        </a>
+
+        <a href="https://github.com/YOUR_GITHUB_USERNAME" class="contact__link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 008 10.94c.58.1.79-.25.79-.56v-2.15c-3.25.72-3.94-1.39-3.94-1.39-.53-1.38-1.3-1.75-1.3-1.75-1.06-.74.08-.73.08-.73 1.18.08 1.8 1.23 1.8 1.23 1.04 1.82 2.74 1.29 3.41.99.11-.77.41-1.29.74-1.59-2.6-.3-5.34-1.33-5.34-5.92 0-1.31.46-2.38 1.22-3.22-.12-.3-.53-1.53.12-3.18 0 0 .99-.32 3.25 1.23a11.1 11.1 0 015.92 0c2.26-1.55 3.25-1.23 3.25-1.23.65 1.65.24 2.88.12 3.18.76.84 1.22 1.91 1.22 3.22 0 4.6-2.75 5.62-5.37 5.91.42.37.8 1.1.8 2.23v3.3c0 .31.21.67.8.56A11.5 11.5 0 0023.5 12C23.5 5.65 18.35.5 12 .5z"/>
+          </svg>
+          https://github.com/NacTala
+        </a>
+
+        <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE/" class="contact__link" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4.98 3.5A2.48 2.48 0 102.5 5.98 2.48 2.48 0 004.98 3.5zM3 8h4v13H3zm7 0h3.83v1.77h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.09V21h-4v-4.84c0-1.15-.02-2.63-1.6-2.63-1.6 0-1.84 1.25-1.84 2.55V21h-4z"/>
+          </svg>
+          www.linkedin.com/in/nacim-talaoubrid
+        </a>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <span>&copy; <span id="year"></span> Nacim TALAOUBRID</span>
+    <span class="footer__mono">// build vanilla HTML · CSS · JS — hébergé sur GitHub Pages</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
