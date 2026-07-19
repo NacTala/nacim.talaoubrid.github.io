@@ -959,6 +959,28 @@ ul { margin: 0; padding: 0; }
   font-weight: 600;
 }
 
+.modal__video-slot {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px dashed rgba(20, 24, 31, 0.18);
+  background: linear-gradient(135deg, rgba(238, 242, 246, 0.7), rgba(227, 233, 240, 0.95));
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+.modal__video-slot video {
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  border-radius: 12px;
+  display: block;
+  background: #000;
+}
+
 /* Contact */
 .contact { background: var(--panel); color: var(--panel-ink); padding: var(--section-pad) 0; }
 .contact .eyebrow { color: var(--accent); }
